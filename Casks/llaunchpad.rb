@@ -1,15 +1,14 @@
 cask "llaunchpad" do
-  version "0.1.3"
-  sha256 "b9635958ff4b3d73e7413ecca47ff9517fdb619ab7a31cb1af6324f011cd7376"
+  version "0.2.0"
+  sha256 "0018f1b430b8b2bb421660edd209b02349a231ee70dcf1e8731c9bb5755e6e2d"
 
   url "https://github.com/draugvar/llaunchpad/releases/download/v#{version}/llaunchpad-macos-universal.tar.gz"
   name "Llaunchpad"
-  desc "Native macOS launcher for Ollama coding agents with cloud models"
+  desc "Native launcher for Ollama coding agents with cloud models"
   homepage "https://github.com/draugvar/llaunchpad"
 
   app "Llaunchpad.app"
 
-  # unsigned build: strip quarantine so it opens without the Gatekeeper prompt
   postflight do
     system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{appdir}/Llaunchpad.app"]
   end
