@@ -1,6 +1,6 @@
 cask "llaunchpad" do
-  version "0.6.1"
-  sha256 "3cc358affe81ab6e04c168124118f3656bfb429ed4241ebed203e97ec8395472"
+  version "0.6.2"
+  sha256 "5c1aff0b4920dabc033d0908f7c9bc08ac29ed3b995c90d0c87bc7cfceb9ee22"
 
   url "https://github.com/draugvar/llaunchpad/releases/download/v#{version}/llaunchpad-macos-universal.tar.gz"
   name "Llaunchpad"
